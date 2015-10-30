@@ -14,7 +14,7 @@ intuitive and easy to read. Maintaining a fixed side column will keep links with
 
 Links to some designs that inspired my layout:
 
-http://www.csszengarden.com/220/
-http://www.csszengarden.com/087/
-http://www.csszengarden.com/094/
-http://www.csszengarden.com/216/
+http://www.csszengarden.com/220/  
+http://www.csszengarden.com/087/  
+http://www.csszengarden.com/094/  
+http://www.csszengarden.com/216/  
