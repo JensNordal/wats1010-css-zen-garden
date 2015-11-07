@@ -1,194 +1,251 @@
-/* css Zen Garden default style v1.02 */
-/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
-
-/* This file based on 'Tranquille' by Dave Shea */
-/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
-/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
-
-/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
-
-
-/* basic elements */
+/*--- Start Basic Elements ---*/
 html {
+	font-family: arial, sans-serif;
 	margin: 0;
 	padding: 0;
+	background-image: url(images/background-1920x1200.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	}
 body { 
-	font: 75% georgia, sans-serif;
-	line-height: 1.88889;
-	color: #555753; 
-	background: #fff url(blossoms.jpg) no-repeat bottom right; 
-	margin: 0; 
-	padding: 0;
+	font: arial, sans-serif;
+	line-height: 1.6;
+	color: #000; 
+	background: #fff; 
+	opacity: 0.8;
+	margin: 100px 100px 40px 100px; 
+	padding: 20px;
+	border-radius: 5px;
+	float: right;
 	}
 p { 
-	margin-top: 0; 
-	text-align: justify;
+	margin-top: 0;
 	}
 h3 { 
-	font: italic normal 1.4em georgia, sans-serif;
+	font: bold 1.8em arial, sans-serif;
 	letter-spacing: 1px; 
-	margin-bottom: 0; 
-	color: #7D775C;
+	margin-top: 3rem;
+	margin-bottom: 1rem;
+	color: #000;
 	}
 a:link { 
 	font-weight: bold; 
 	text-decoration: none; 
-	color: #B7A5DF;
+	color: #1C86EE;
 	}
 a:visited { 
 	font-weight: bold; 
 	text-decoration: none; 
-	color: #D4CDDC;
+	color: #63B8FF;
 	}
 a:hover, a:focus, a:active { 
 	text-decoration: underline; 
-	color: #9685BA;
+	color: black;
+	animation: pulse 1s alternate ease-in-out infinite;
 	}
 abbr {
 	border-bottom: none;
 	}
+/*--- End Basic Elements ---*/
 
 
-/* specific divs */
-.page-wrapper { 
-	background: url(zen-bg.jpg) no-repeat top left; 
-	padding: 0 175px 0 110px;  
-	margin: 0; 
-	position: relative;
-	}
-
-.intro { 
-	min-width: 470px;
-	width: 100%;
-	}
-
-header h1 { 
-	background: transparent url(h1.gif) no-repeat top left;
-	margin-top: 10px;
-	display: block;
-	width: 219px;
-	height: 87px;
-	float: left;
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-header h2 { 
-	background: transparent url(h2.gif) no-repeat top left; 
-	margin-top: 58px; 
-	margin-bottom: 40px; 
-	width: 200px; 
-	height: 18px; 
-	float: right;
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
+/*--- Start Header ---*/
 header {
-	padding-top: 20px;
-	height: 87px;
+	float: right;
+	clear: both;
+	margin-left: 40rem;
+	line-height: 1.0;
 }
-
-.summary {
-	clear: both; 
-	margin: 20px 20px 20px 10px; 
-	width: 160px; 
-	float: left;
-	}
-.summary p {
-	font: italic 1.1em/2.2 georgia; 
-	text-align: center;
-	}
-
-.preamble {
-	clear: right; 
-	padding: 0px 10px 0 10px;
-	}
-.supporting {	
-	padding-left: 10px; 
-	margin-bottom: 40px;
-	}
-
-footer { 
-	text-align: center; 
-	}
-footer a:link, footer a:visited { 
-	margin-right: 20px; 
-	}
-
-.sidebar {
-	margin-left: 600px; 
-	position: absolute; 
-	top: 0; 
-	right: 0;
-	}
-.sidebar .wrapper { 
-	font: 10px verdana, sans-serif; 
-	background: transparent url(paper-bg.jpg) top left repeat-y; 
-	padding: 10px; 
-	margin-top: 150px; 
-	width: 130px; 
-	}
-.sidebar h3.select { 
-	background: transparent url(h3.gif) no-repeat top left; 
-	margin: 10px 0 5px 0; 
-	width: 97px; 
-	height: 16px; 
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-.sidebar h3.archives { 
-	background: transparent url(h5.gif) no-repeat top left; 
-	margin: 25px 0 5px 0; 
-	width:57px; 
-	height: 14px; 
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-.sidebar h3.resources { 
-	background: transparent url(h6.gif) no-repeat top left; 
-	margin: 25px 0 5px 0; 
-	width:63px; 
-	height: 10px; 
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-
-
-.sidebar ul {
+header h1 {
+	font-family: arial, sans-serif;
+	font-size: 4em;
+	color: gray;
 	margin: 0;
 	padding: 0;
-	}
-.sidebar li {
-	line-height: 1.3em; 
-	background: transparent url(cr1.gif) no-repeat top center; 
-	display: block; 
-	padding-top: 5px; 
-	margin-bottom: 5px;
+}
+header h1:hover {
+	animation: pulse 1s alternate ease-in-out infinite;
+}
+header h2 {
+	font-family: arial, sans-serif;
+	font-size: 1em;
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+#zen-summary {
+	float: right;
+	clear: both;
+	width: 30rem;
+	text-align: right;
+	font-size: smaller;
+	margin-top: 3rem;
+}
+/*--- End Header ---*/
+
+
+/*--- Start Body Text ---*/
+.preamble {
+	float: right;
+	clear: both;
+	width: 65%;
+	margin: 2rem 0 0 0;
+	padding: 2rem 0 0 0;
+}
+#zen-supporting {
+	width: 65%;
+	float: right;
+	clear: both;
+}
+/*--- End Body Text ---*/
+
+
+/*--- Begin Sidebar ---*/
+.design-selection, .design-archives, .zen-resources {
+	float: left;
+	clear: both;
+}
+aside ul li {
 	list-style-type: none;
-	}
-.sidebar li a:link {
-	color: #988F5E;
-	}
-.sidebar li a:visited {
-	color: #B3AE94;
-	}
+}
+.design-archives ul {
+    display: flex;
+    flex-direction: column-reverse;
+}
+#design-archives {
+	background-color: #f0f0f0;
+  width: 23rem;
+	position: absolute;
+	top: 10px;
+}
+.next {
+	visibility: hidden;
+}
+#design-selection {
+	position: absolute;
+	top: 150px;
+	background-color: #f0f0f0;
+  width: 23rem;
+}
+.viewall a::after {
+	content: " >> "
+}
+.viewall {
+	margin: 0;
+	padding: 0;
+}
+a[class~="designer-name"] {
+	font-size: small;
+}
+a[href*="andrew"] {
+	margin-left: 15px;
+}
+a[href*="mall"] {
+	margin-left: 142px;
+}
+a[href*="steffen"] {
+	margin-left: 131px;
+}
+a[href*="trent"] {
+	margin-left: 102px;
+}
+a[href*="elliot"] {
+	margin-left: 70px;
+}
+a[href*="carlson"] {
+	margin-left: 65px;
+}
+a[href*="melt"] {
+	margin-left: 28px;
+}
+#design-selection a[href="http://www.mezzoblue.com/"] {
+	margin-left: 85px;
+}
+#zen-resources {
+	background-color: #f0f0f0;
+  width: 23rem;	
+	position: absolute;
+	top: 440px;
+}
+aside h3 {
+	visibility: hidden;
+	padding: 0;
+	margin: 0;
+}
+aside {
+	position: fixed;
+	clear: both;
+}
+aside div {
+	border-radius: 4px;
+	padding: 0 0 1rem 0;
+	margin-top: 0;
+	margin-left: 5px;
+  transition-property: border-radius;
+  transition-duration: 750ms;
+  transition-timing-function: ease-in-out;
+}
+aside div:hover {
+  border-radius: 4rem;
+}
+/*--- End Sidebar ---*/
 
 
-.extra1 {
-	background: transparent url(cr2.gif) top left no-repeat; 
-	position: absolute; 
-	top: 40px; 
-	right: 0; 
-	width: 148px; 
-	height: 110px;
-	}
+/*--- Start Footer FinePrint ---*/
+#zen-requirements p:nth-child(6) {
+	font-size: small;
+	margin: 5rem 0 3rem 0;
+}
+/*--- End Footer FinePrint ---*/
+
+
+/*--- Start Footer ---*/
+footer {
+	margin: 5rem 0 2rem 0;
+}
+footer a {
+	background-color: #63B8FF;
+	padding: 1rem;
+	margin: 0 0.5rem 0 0;
+	border-radius: 3px;
+}
+footer a:link {
+	color: white;
+	font-family: arial, sans-serif;
+}
+footer a:hover {
+	color: lightgray;
+  animation: spin 3s linear infinite;
+}
+footer a:visited {
+	color: gray;
+}
+.zen-validate-html {
+	border-radius: 25px 3px 3px 25px;
+}
+.zen-github {
+	border-radius: 3px 25px 25px 3px;
+}
+/*--- End Footer ---*/
+
+
+/*--- Start Keyframes ---*/
+@keyframes spin {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
+/*--- End Keyframes ---*/
+
