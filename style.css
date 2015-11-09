@@ -7,7 +7,7 @@ html {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	}
+}
 body { 
 	font: arial, sans-serif;
 	line-height: 1.6;
@@ -15,38 +15,38 @@ body {
 	background: #fff; 
 	opacity: 0.8;
 	margin: 100px 100px 40px 100px; 
-	padding: 20px;
+	padding: 1.5rem 1.5rem 2rem 1.5rem;
 	border-radius: 5px;
 	float: right;
-	}
+}
 p { 
 	margin-top: 0;
-	}
+}
 h3 { 
 	font: bold 1.8em arial, sans-serif;
 	letter-spacing: 1px; 
 	margin-top: 3rem;
 	margin-bottom: 1rem;
 	color: #000;
-	}
+}
 a:link { 
 	font-weight: bold; 
 	text-decoration: none; 
 	color: #1C86EE;
-	}
+}
 a:visited { 
 	font-weight: bold; 
 	text-decoration: none; 
 	color: #63B8FF;
-	}
+}
 a:hover, a:focus, a:active { 
-	text-decoration: underline; 
+	text-decoration: none;
 	color: black;
 	animation: pulse 1s alternate ease-in-out infinite;
-	}
+}
 abbr {
 	border-bottom: none;
-	}
+}
 /*--- End Basic Elements ---*/
 
 
@@ -58,10 +58,11 @@ header {
 	line-height: 1.0;
 }
 header h1 {
-	font-family: arial, sans-serif;
+	font-family: papyrus, sans-serif;
 	font-size: 4em;
-	color: gray;
-	margin: 0;
+	color: #FFBC2F;
+	text-shadow: #000 1px 3px 0, #aba8a8 1px 13px 5px;
+	margin: 1.2rem 1rem 0 0;
 	padding: 0; animation-duration: 3s;
     animation-name: slidein;
 }
@@ -72,7 +73,7 @@ header h2 {
 	font-family: arial, sans-serif;
 	font-size: 1em;
 	float: right;
-	margin: 0;
+	margin: 1rem;
 	padding: 0;
 }
 #zen-summary {
@@ -103,12 +104,34 @@ header h2 {
 
 
 /*--- Begin Sidebar ---*/
+aside ul li {
+	list-style-type: none;
+}
+aside h3 {
+	visibility: hidden;
+	padding: 0;
+	margin: 0;
+}
+aside {
+	position: fixed;
+	clear: both;
+}
+aside div {
+	border-radius: 4px;
+	padding: 0 0 1rem 0;
+	margin-top: 0;
+	margin-left: 5px;
+    transition-property: border-radius;
+    transition-duration: 750ms;
+    transition-timing-function: ease-in-out;
+}
+aside div:hover {
+    border-radius: 4rem;
+}
 .design-selection, .design-archives, .zen-resources {
 	float: left;
 	clear: both;
-}
-aside ul li {
-	list-style-type: none;
+	text-shadow: 1px 1px 0 darkgray;
 }
 .design-archives ul {
     display: flex;
@@ -116,9 +139,10 @@ aside ul li {
 }
 #design-archives {
 	background-color: #f0f0f0;
-  width: 23rem;
+    width: 23rem;
 	position: absolute;
 	top: 10px;
+	border: 1px solid darkgray;
 }
 .next {
 	visibility: hidden;
@@ -127,10 +151,14 @@ aside ul li {
 	position: absolute;
 	top: 150px;
 	background-color: #f0f0f0;
-  width: 23rem;
+  	width: 23rem;
+	border: 1px solid darkgray;
 }
 .viewall a::after {
 	content: " >> "
+}
+.viewall a::before {
+	content: ""
 }
 .viewall {
 	margin: 0;
@@ -165,30 +193,10 @@ a[href*="melt"] {
 }
 #zen-resources {
 	background-color: #f0f0f0;
-  width: 23rem;	
+	width: 23rem;	
 	position: absolute;
 	top: 440px;
-}
-aside h3 {
-	visibility: hidden;
-	padding: 0;
-	margin: 0;
-}
-aside {
-	position: fixed;
-	clear: both;
-}
-aside div {
-	border-radius: 4px;
-	padding: 0 0 1rem 0;
-	margin-top: 0;
-	margin-left: 5px;
-    transition-property: border-radius;
-    transition-duration: 750ms;
-    transition-timing-function: ease-in-out;
-}
-aside div:hover {
-    border-radius: 4rem;
+	border: 1px solid darkgray;
 }
 /*--- End Sidebar ---*/
 
@@ -210,6 +218,8 @@ footer a {
 	padding: 1rem;
 	margin: 0 0.5rem 0 0;
 	border-radius: 3px;
+	text-shadow: 0 -1px 0 black;
+	box-shadow:  0 2px 1px gray;
 }
 footer a:link {
 	color: white;
@@ -217,7 +227,7 @@ footer a:link {
 }
 footer a:hover {
 	color: lightgray;
-  animation: spin 3s linear infinite;
+	animation: spin 3s linear infinite;
 }
 footer a:visited {
 	color: gray;
@@ -235,28 +245,28 @@ footer a:visited {
 @keyframes spin {
   0% {
     transform: rotateX(0deg);
-  }
+	}
   100% {
     transform: rotateX(360deg);
-  }
+	}
 }
 @keyframes pulse {
   0% {
     transform: scale(1);
-  }
+	}
   100% {
     transform: scale(1.08);
-  }
+	}
 }
 @keyframes slidein {
   from {
     margin-left: 100%;
     width: 300%; 
-  }
+	}
   to {
     margin-left: 0;
     width: 100%;
-  }
+	}
 }
 /*--- End Keyframes ---*/
 
