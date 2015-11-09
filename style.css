@@ -23,11 +23,15 @@ p {
 	margin-top: 0;
 }
 h3 { 
-	font: bold 1.8em arial, sans-serif;
+	font: bold 1.8em papyrus, sans-serif;
 	letter-spacing: 1px; 
 	margin-top: 3rem;
 	margin-bottom: 1rem;
-	color: #000;
+	color: #696969;
+}
+h3::before {
+	content: url('images/feather.png');
+	vertical-align: -15%;
 }
 a:link { 
 	font-weight: bold; 
@@ -54,7 +58,6 @@ abbr {
 header {
 	float: right;
 	clear: both;
-	margin-left: 30rem;
 	line-height: 1.0;
 }
 header h1 {
@@ -62,7 +65,7 @@ header h1 {
 	font-size: 4em;
 	color: #FFBC2F;
 	text-shadow: #000 1px 3px 0, #aba8a8 1px 13px 5px;
-	margin: 1.2rem 1rem 0 0;
+	margin: 1.2rem 0.5rem 0 0;
 	padding: 0; 
 	animation-name: slidein;
 	animation-duration: 3s;
@@ -77,8 +80,9 @@ header h1::before {
 header h2 {
 	font-family: arial, sans-serif;
 	font-size: 1em;
+	color: #828282;
 	float: right;
-	margin: 1rem;
+	margin: -30px 10px 0 0;
 	padding: 0;
 }
 #zen-summary {
@@ -87,7 +91,7 @@ header h2 {
 	width: 30rem;
 	text-align: right;
 	font-size: smaller;
-	margin-top: 3rem;
+	margin: 3rem 10px 0 0;
 }
 /*--- End Header ---*/
 
@@ -114,6 +118,7 @@ aside ul li {
 }
 aside h3 {
 	visibility: hidden;
+	font-size: 0;
 	padding: 0;
 	margin: 0;
 }
@@ -124,8 +129,7 @@ aside {
 aside div {
 	border-radius: 4px;
 	padding: 0 0 1rem 0;
-	margin-top: 0;
-	margin-left: 5px;
+	margin: 0 0 0 5px;
     transition-property: border-radius;
     transition-duration: 750ms;
     transition-timing-function: ease-in-out;
@@ -154,50 +158,62 @@ aside div:hover {
 }
 #design-selection {
 	position: absolute;
-	top: 150px;
+	top: 175px;
 	background-color: #f0f0f0;
   	width: 23rem;
 	border: 1px solid darkgray;
+	font-size: 15px;
+	color: gray;
 }
 .viewall a::after {
 	content: " >> "
 }
 .viewall {
+	background-color: white;
+	border-radius: 1rem;
+	text-shadow: 1px 1px 0 darkgray;
+	box-shadow: 2px 2px 1px darkgray;
+	width: 10rem;
 	margin: 0;
-	padding: 0;
+	padding: 10px;
 }
-a[class~="designer-name"] {
-	font-size: small;
+a[href*="221"]::after {
+	content: "";
+	margin-left: 12px;
 }
-a[href*="andrew"] {
-	margin-left: 15px;
-}
-a[href*="mall"] {
+a[href*="220"]::after {
+	content: "";
 	margin-left: 142px;
 }
-a[href*="steffen"] {
-	margin-left: 131px;
+a[href*="219"]::after {
+	content: "";
+	margin-left: 122px;
 }
-a[href*="trent"] {
-	margin-left: 102px;
+a[href*="218"]::after {
+	content: "";
+	margin-left: 99px;
 }
-a[href*="elliot"] {
-	margin-left: 70px;
+a[href*="217"]::after {
+	content: "";
+	margin-left: 63px;
 }
-a[href*="carlson"] {
-	margin-left: 65px;
+a[href*="216"]::after {
+	content: "";
+	margin-left: 60px;
 }
-a[href*="melt"] {
-	margin-left: 28px;
+a[href*="215"]::after {
+	content: "";
+	margin-left: 33px;
 }
-#design-selection a[href="http://www.mezzoblue.com/"] {
-	margin-left: 85px;
+a[href*="214"]::after {
+	content: "";
+	margin-left: 88px;
 }
 #zen-resources {
 	background-color: #f0f0f0;
 	width: 23rem;	
 	position: absolute;
-	top: 440px;
+	top: 470px;
 	border: 1px solid darkgray;
 }
 /*--- End Sidebar ---*/
