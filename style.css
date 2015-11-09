@@ -45,7 +45,7 @@ a:visited {
 }
 a:hover, a:focus, a:active { 
 	text-decoration: none;
-	color: black;
+	color: #3a5795;
 	animation: pulse 1s alternate ease-in-out infinite;
 }
 abbr {
@@ -170,7 +170,7 @@ aside div:hover {
 }
 .viewall {
 	background-color: white;
-	border-radius: 1rem;
+	border-radius: 0.5rem;
 	text-shadow: 1px 1px 0 darkgray;
 	box-shadow: 2px 2px 1px darkgray;
 	width: 10rem;
