@@ -54,7 +54,7 @@ abbr {
 header {
 	float: right;
 	clear: both;
-	margin-left: 40rem;
+	margin-left: 30rem;
 	line-height: 1.0;
 }
 header h1 {
@@ -63,11 +63,16 @@ header h1 {
 	color: #FFBC2F;
 	text-shadow: #000 1px 3px 0, #aba8a8 1px 13px 5px;
 	margin: 1.2rem 1rem 0 0;
-	padding: 0; animation-duration: 3s;
-    animation-name: slidein;
+	padding: 0; 
+	animation-name: slidein;
+	animation-duration: 3s;
 }
 header h1:hover {
 	animation: pulse 1s alternate ease-in-out infinite;
+}
+header h1::before {
+	content: url('images/ying-yang.png');
+	vertical-align: -72%;
 }
 header h2 {
 	font-family: arial, sans-serif;
@@ -156,9 +161,6 @@ aside div:hover {
 }
 .viewall a::after {
 	content: " >> "
-}
-.viewall a::before {
-	content: ""
 }
 .viewall {
 	margin: 0;
