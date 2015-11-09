@@ -45,7 +45,7 @@ a:visited {
 }
 a:hover, a:focus, a:active { 
 	text-decoration: none;
-	color: #3a5795;
+	color: #FFBC2F;
 	animation: pulse 1s alternate ease-in-out infinite;
 }
 abbr {
@@ -137,6 +137,30 @@ aside div {
 aside div:hover {
     border-radius: 4rem;
 }
+.sidebar a:link {
+	color: #FFBC2F;
+}
+.sidebar a:hover, a:focus, a:active {
+	color: #3a5795;
+}
+.viewall a:hover {
+	color: #FFBC2F;
+}
+.viewall a::after {
+	content: " >> "
+}
+.viewall {
+	background-color: white;
+	border-radius: 0.5rem;
+	text-shadow: 1px 1px 0 darkgray;
+	box-shadow: 2px 2px 1px darkgray;
+	width: 10rem;
+	margin: 0;
+	padding: 10px;
+}
+.next {
+	visibility: hidden;
+}
 .design-selection, .design-archives, .zen-resources {
 	float: left;
 	clear: both;
@@ -153,9 +177,6 @@ aside div:hover {
 	top: 10px;
 	border: 1px solid darkgray;
 }
-.next {
-	visibility: hidden;
-}
 #design-selection {
 	position: absolute;
 	top: 175px;
@@ -164,18 +185,6 @@ aside div:hover {
 	border: 1px solid darkgray;
 	font-size: 15px;
 	color: gray;
-}
-.viewall a::after {
-	content: " >> "
-}
-.viewall {
-	background-color: white;
-	border-radius: 0.5rem;
-	text-shadow: 1px 1px 0 darkgray;
-	box-shadow: 2px 2px 1px darkgray;
-	width: 10rem;
-	margin: 0;
-	padding: 10px;
 }
 a[href*="221"]::after {
 	content: "";
