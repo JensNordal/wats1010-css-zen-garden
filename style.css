@@ -313,7 +313,7 @@ footer a:visited {
     }
 	body {
 		width: 50%;
-		margin: 100px 350px 250px 350px;
+		margin: 100px 20% 250px 20%;
 	}
 }
 /*--- End @media screen sizes ---*/
